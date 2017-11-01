@@ -1,2 +1,12 @@
 What happens when you initialize a repository? Why do you need to do it?
 A repository is created that is a branch master, initial commit, and untracked files. You can use git add to add track. You need to do it to create repositorys where you store your commits.
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+Staging area is the middle man between the working directory and the git repository. It's a way to review the current version before you create a commit.
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Branches are useful for experimental code and experimental features that are not quite ready to be committed. merge can be used to merge branches later which is really useful. git branch shows current branch and git branch ---- creates a new one whatever you want to name it, branches are checked out just like commits. master is the production quality the others are debug or experimental features
+How do the diagrams help you visualize the branch structure?
+Diagrams help you see the data structure of the branches and how far your reachability extends. Also it gives you a good idea of the main branch, other branches and parent commits.Always Write down commit id always since reachability is a problem. When you checkout a commit and no branch, you will not have reachability.
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Merging 2 branches together combines all the commits downstream in the two branches and organizes them based on timestamp. Reachability will extend to the end of the two branche mearged. Deleting the non-parent of the merge branch can proceed since it is no longer required. 
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Automatic merging lets you merge branches easily when there is no conflict in commit code, when there is a conflict in code this will show that the conflict needs to be resolved before the merge can take place. Conflicts can be find denoted by a lot of <<<< signs in the code. Also command git log -n1 -> shows the conflicts in merging, ie the exact location of the conflicts. Manual merging would be a nightmare. Use the staging area, before commiting. Commit every time you accomplish something worth a commit. 
