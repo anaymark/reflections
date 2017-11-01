@@ -1,0 +1,5 @@
+Use the command git push local rep github link to push commit rep from local storage. 
+git remote -v-shows push and fetch origin link
+git remote add origin-add new origin link from github created
+git config --global creditial.helper osxkyechain, username and pass save for github local
+Adding changes directly to github or push from other local:
