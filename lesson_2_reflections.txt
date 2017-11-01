@@ -10,3 +10,18 @@ What is the result of merging two branches together? Why do we represent it in t
 Merging 2 branches together combines all the commits downstream in the two branches and organizes them based on timestamp. Reachability will extend to the end of the two branche mearged. Deleting the non-parent of the merge branch can proceed since it is no longer required. 
 What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
 Automatic merging lets you merge branches easily when there is no conflict in commit code, when there is a conflict in code this will show that the conflict needs to be resolved before the merge can take place. Conflicts can be find denoted by a lot of <<<< signs in the code. Also command git log -n1 -> shows the conflicts in merging, ie the exact location of the conflicts. Manual merging would be a nightmare. Use the staging area, before commiting. Commit every time you accomplish something worth a commit. 
+
+Commands:
+
+git add-Add a file to the staging area
+git commit-Commit the files from the staging area to the repository 
+git status-Show which files are in the staging area, and which files from the working directory are not part of the repository    
+git diff-Git diff without arguments is comparing the working directory with the staging area
+git diff --staged-Compare the staging area with the repository
+git reset --hard-Undo all changes,no restore for this, so be carefull!
+git checkout master -Restore the Head
+git log --graph --oneline <branch1> <branch2>-Show a visual representation of the commit history within different branches
+git checkout -b new_branch_name-Creates a new branch and do a checkout on this branch in one call instead of git branch new_branch_name and git checkout new_branch_name
+git merge branch1 branch2-Merge two branches, branch2 get merged into branch1
+git branch -d name-Remove the branch with the specified name
+git show commitId-Show the changes made in this commit compared to the previous version. Works after merging.
