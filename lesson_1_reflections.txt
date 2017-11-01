@@ -13,3 +13,15 @@ Using git log and git checkout to look at different commits or versions to narro
 Now that you have your workspace set up, what do you want to try using Git for?
 I want to explore existing android projects and learn the code associated with different versions and what it represents. 
 
+Commands:
+
+q-exit git log!
+vi editing-i to edit, shift zz to quit
+nano-text editing
+git log-List the commits and show which files have changed
+git log --stat-Show addition information about the commits
+git diff id1 id2-Compare two commits make sure its new, old or old, new-whichever way helps identify bug(s).
+git clone-Create a local copy/clone from the repository
+git config --global color.ui auto-get colored diff output
+git checkout-Shows a previous version of the file. checkout branches as well. 
+
