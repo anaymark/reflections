@@ -1,0 +1,2 @@
+What happens when you initialize a repository? Why do you need to do it?
+A repository is created that is a branch master, initial commit, and untracked files. You can use git add to add track. You need to do it to create repositorys where you store your commits.
