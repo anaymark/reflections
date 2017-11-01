@@ -1,0 +1,15 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+Using the command diff -u on mac and FC on windows helps look at all the changes that have occured between versions in a clean format and helps you narrow down the culprit. 
+How could having easy acess to the entire history of a file make you a more efficient programmer in the long term?
+Version history acess lets you have acess to all builds if ever a time comes that certain previous code that was deleted needs to be accessed. Plus the tracking lets you easily see all previous features in development and previously written code.
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+Pros: save at logical points and avoid either cluttering or lackluster commits, cons: user error and forgetfulness 
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+Files in Git are most times interrelated and effect the functioning of one another. Other control systems like Google Docs does not pose a huge interrelation between user files. 
+How can you use the commands git log and git diff to view the history of files?
+git log looks at the complete log of commits and lets you zero in on the comits you specifically want to look at. That's where git diff comes in and can be used to look at specific differences in versions. git log --stat is useful to look a version statistics.
+How might using version control make you more confident to make changes that could break something?
+Using git log and git checkout to look at different commits or versions to narrow doen where the bug was introduced. You can then further narrow down by comparing the commit where the code was introduced to the previous commit using git diff command. 
+Now that you have your workspace set up, what do you want to try using Git for?
+I want to explore existing android projects and learn the code associated with different versions and what it represents. 
+
