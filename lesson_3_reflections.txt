@@ -1,0 +1,23 @@
+Touch-create new file.
+Use the command git push local rep github link to push commit rep from local storage. 
+git remote -v-shows push and fetch origin link
+git remote add origin-add new origin link from github created
+git config --global creditial.helper osxkyechain, username and pass save for github local
+Adding changes directly to github or push from other local:
+When would you want to use a remote repository rather than keeping all your work local?
+Collaboration that is time sensitive and for work that either either ready to share or needs to be shared
+git pull origin master
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+Pulling manually lets you control local versions that you are working on versus possible changes made on collab projects that you are either not working on or do not need/want locally. 
+Cloning repositories: Forking, direct copy on github servers->pull down to your own by using clone gitlink.
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+Forks are copies of repositories on github. Clones are copies of repos either locally or push/pulls to and from github. Branches are versions of commits that are interlinked and updated by user/users. 
+Merging local and remote branches: git fetch updates only local wih the changes in remote then see changes on new branch to merge or combine comitts locally
+Same line fork modification conflicts:
+git pull origin master= git fetch origin and git merge master origin/master
+Fast forward merges: if you can reach the past branch from current branch or it is linear you can do fast forward merge, ansestor of branch merging from. 
+What is the benefit of having a copy of the last known state of the remote stored locally?
+For version control on projects where people can contribute edit and alter. Local storage backup is always useful. 
+Make local changes on seperate branch and push it to the fork, why not on master? Pull request, to merge code into master (ie push into master)
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+Collaboration without Git and GitHub would be a nightmare since you would have to manually do version control and manually look at new commits or changes to code for debugging and everything in between. Git and GitHub enable efficiency in local and remote version control as well as collaboration on projects. 
