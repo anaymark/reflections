@@ -21,3 +21,18 @@ For version control on projects where people can contribute edit and alter. Loca
 Make local changes on seperate branch and push it to the fork, why not on master? Pull request, to merge code into master (ie push into master)
 How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
 Collaboration without Git and GitHub would be a nightmare since you would have to manually do version control and manually look at new commits or changes to code for debugging and everything in between. Git and GitHub enable efficiency in local and remote version control as well as collaboration on projects. 
+Make changes in GitHub only through pull requests for collab reasons of visibility.
+git log -n 1->view merge, commit and pull request sucess?
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+Making a change in a seperate branch is very useful for experimental features and for collaboration reasons to increase visibility and code approval/review of the team through pull request reviews and merging of code that is stable/approved to master branch. 
+making multiple origins for upstream to request a merge when the same file was changed in original and the commit cannot be merged in. Push the result to your own origin not the original repository!
+
+Commands:
+
+git remote-Show all remote locations for the repository
+git remote add origin url-Add a new remote location for the repository. Origin is the default name to use when you create only one remote location. Url should be the https url to the github repository.
+git remove -v-Outputs the remote locations with verbose information (fetch and push urls)
+git push origin master-Push the master branch to the remote location origin.
+git pull origin master-Get the master branch from the remote location origin.
+git pull origin master-Git fetch origin + git merge master origin/master
+git fetch origin-Get the changes from the remote location into the (hidden?) origin/master branch
